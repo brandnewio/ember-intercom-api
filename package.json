@@ -1,6 +1,6 @@
 {
   "name": "ember-intercom-api",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ember addon to make life easier when it comes to work with Intercom.io scripts (widget/API).",
   "directories": {
     "doc": "doc",
