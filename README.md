@@ -1,6 +1,6 @@
 # ember-intercom-api
 
-This addon simple inject Intercom.io's script at runtime and gives you a nice interface for interaction with the script via `intercom` service.
+This addon simply inject Intercom.io's script at runtime and gives you a nice interface for interaction with the script via `intercom` service.
 
 ## Installation
 
@@ -21,7 +21,7 @@ ENV['ember-intercom-api'] = {
 ```
 
 Please remember that you can make use of `environment` variable available in `config/enviroment`.
-This way you can set testing appId for you `development` or `staging` environment:
+This way you can set testing `appId` for you `development` or `staging` environment:
 
 ```javascript
 module.exports = function(environment) {
