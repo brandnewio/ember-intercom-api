@@ -1,7 +1,7 @@
 {
   "name": "ember-intercom-api",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember addon to make life easier when it comes to work with Intercom.io scripts (widget/API).",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -15,7 +15,7 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Tomasz Nieżurawski",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -40,7 +40,9 @@
     "loader.js": "^4.0.0"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "intercom",
+    "intercon.io"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.5"
