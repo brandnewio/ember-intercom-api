@@ -21,7 +21,7 @@ ENV['ember-intercom-api'] = {
 ```
 
 Please remember that you can make use of `environment` variable available in `config/enviroment`.
-This way you can set testing `appId` for you `development` or `staging` environment:
+This way you can set testing `appId` for your `development` or `staging` environment:
 
 ```javascript
 module.exports = function(environment) {
@@ -41,7 +41,7 @@ module.exports = function(environment) {
 
 You would rather like to avoid injecting Intercom's script to your Acceptance Tests and send the data.
  
-This could be done but just not adding `ember-intercom-api` options to `ENV` variable:
+This could be done by just not adding `ember-intercom-api` options to `ENV` variable:
 
 ```javascript
 module.exports = function(environment) {
