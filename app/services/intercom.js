@@ -1,18 +1,20 @@
 import Ember from 'ember';
 import config from '../config/environment';
 
-const { Service, computed, K, isPresent } = Ember;
+const { Service, computed, isPresent } = Ember;
 
 export default Service.extend({
   config: computed(function () {
     return config['ember-intercom-api'] || {};
   }),
 
+  emptyFn() {},
+
   intercomApi() {
     if (isPresent(window.Intercom)) {
       return window.Intercom;
     } else {
-      return K;
+      return this.emptyFn;
     }
   },
 
