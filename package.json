@@ -1,6 +1,6 @@
 {
   "name": "ember-intercom-api",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Ember addon to make life easier when it comes to work with Intercom.io scripts (widget/API).",
   "keywords": [
     "ember-addon",
@@ -22,7 +22,6 @@
   "dependencies": {
     "ember-cli-babel": "^5.1.7"
   },
-
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
