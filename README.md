@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/ember-intercom-api.svg)](https://badge.fury.io/js/ember-intercom-api)
+![ember-cli version](https://img.shields.io/badge/ember--cli-2.12.1-orange.svg)
+
 # ember-intercom-api
 
 This addon simply inject Intercom.io's script at runtime and gives you a nice interface for interaction with the script via `intercom` service.
