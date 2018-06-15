@@ -1,5 +1,5 @@
 [![npm version](https://badge.fury.io/js/ember-intercom-api.svg)](https://badge.fury.io/js/ember-intercom-api)
-![ember-cli version](https://img.shields.io/badge/ember--cli-2.12.1-orange.svg)
+![ember-cli version](https://img.shields.io/badge/ember--cli-3.1.3-orange.svg)
 
 # ember-intercom-api
 
