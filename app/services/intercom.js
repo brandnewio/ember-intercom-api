@@ -16,6 +16,10 @@ export default Service.extend({
 
   emptyFn() {},
 
+  getVisitorId() {
+    this.intercomApi()('getVisitorId');
+  },
+
   hide() {
     this.intercomApi()('hide');
   },

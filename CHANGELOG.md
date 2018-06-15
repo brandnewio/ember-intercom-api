@@ -1,5 +1,9 @@
 # ember-intercom-api CHANGELOG
 
+## 0.3.1 (June 15, 2018)
+
+- new api method exposed: `getVisitorId`
+
 ## 0.3.0 (June 15, 2018)
 
 - upgrade `ember-cli` to version `3.1.3` (from `2.12.1`) 

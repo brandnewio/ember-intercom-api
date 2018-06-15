@@ -26,6 +26,15 @@ test('@ config - loads config from environment', function(assert) {
   assert.equal(config, ENV['ember-intercom-api'], 'config from environment');
 });
 
+test('@ getVisitorId - calls getVisitorId method', function(assert) {
+  const stub = this.stub(window, 'Intercom');
+  const service = this.subject();
+
+  service.getVisitorId();
+
+  assert.ok(stub.calledWithExactly('getVisitorId'), 'getVisitorId was called on Intercom');
+});
+
 test('@ hide - calls hide method', function(assert) {
   const stub = this.stub(window, 'Intercom');
   const service = this.subject();
