@@ -59,9 +59,9 @@ export default Route.extend({
 
 ### Exposed API
 
-These methods are exposed via `intercom` service and invoked on the Intercom script.
+These methods are exposed via `intercom` service and invoked on the Intercom script. Read [The Intercom JavaScript API](https://developers.intercom.com/docs/intercom-javascript) for more information.
 
-- `.boot()`
+- `.boot(intercomSettings)` - `intercomSettings` param is optional. If not given then `app_id` provided in `config/environment.js` will be used
 - `.hide()`
 - `.show()`
 - `.showMessages()`
