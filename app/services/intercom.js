@@ -4,11 +4,21 @@ import config from '../config/environment';
 const { Service, computed, isPresent } = Ember;
 
 export default Service.extend({
+  boot(params = {}) {
+    params['app_id'] = this.get('config').appId;
+
+    this.intercomApi()('boot', params);
+  },
+
   config: computed(function () {
     return config['ember-intercom-api'] || {};
   }),
 
   emptyFn() {},
+
+  hide() {
+    this.intercomApi()('hide');
+  },
 
   intercomApi() {
     if (isPresent(window.Intercom)) {
@@ -16,24 +26,6 @@ export default Service.extend({
     } else {
       return this.emptyFn;
     }
-  },
-
-  boot(params = {}) {
-    params['app_id'] = this.get('config').appId;
-
-    this.intercomApi()('boot', params);
-  },
-
-  update(params) {
-    this.intercomApi()('update', params);
-  },
-
-  shutdown() {
-    this.intercomApi()('shutdown');
-  },
-
-  hide() {
-    this.intercomApi()('hide');
   },
 
   show() {
@@ -52,7 +44,15 @@ export default Service.extend({
     }
   },
 
+  shutdown() {
+    this.intercomApi()('shutdown');
+  },
+
   trackEvent(eventName, params) {
     this.intercomApi()('trackEvent', eventName, params);
+  },
+
+  update(params) {
+    this.intercomApi()('update', params);
   }
 });

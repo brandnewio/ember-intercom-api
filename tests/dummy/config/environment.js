@@ -40,6 +40,10 @@ module.exports = function(environment) {
     ENV.APP.LOG_VIEW_LOOKUPS = false;
 
     ENV.APP.rootElement = '#ember-testing';
+
+    ENV['ember-intercom-api'] = {
+      appId: 'FAKE_ID'
+    };
   }
 
   if (environment === 'production') {
