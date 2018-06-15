@@ -40,6 +40,36 @@ module.exports = function(environment) {
 }
 ```
 
+### Using API
+
+Example:
+
+```javascript
+import { inject as service } from '@ember/service';
+import Route from '@ember/routing/route';
+
+export default Route.extend({
+  intercom: service(),
+
+  beforeModel() {
+    this.get('intercom').boot();
+  }
+});
+```
+
+### Exposed API
+
+These methods are exposed via `intercom` service and invoked on the Intercom script.
+
+- `.boot()`
+- `.hide()`
+- `.show()`
+- `.showMessages()`
+- `.showNewMessage(text)` - `text` param is optional
+- `.shutdown()`
+- `.trackEvent(eventName, params)`
+- `.update(params)`
+
 ## Tests
 
 You would rather like to avoid injecting Intercom's script to your Acceptance Tests and send the data.
