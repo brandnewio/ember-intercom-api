@@ -1,9 +1,9 @@
-/* eslint-env node */
+'use strict';
 
 module.exports = function(environment) {
-  var ENV = {
+  let ENV = {
     modulePrefix: 'dummy',
-    environment: environment,
+    environment,
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -44,10 +44,11 @@ module.exports = function(environment) {
     ENV['ember-intercom-api'] = {
       appId: 'FAKE_ID'
     };
+    ENV.APP.autoboot = false;
   }
 
   if (environment === 'production') {
-
+    // here you can enable a production-specific feature
   }
 
   return ENV;

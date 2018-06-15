@@ -1,12 +1,13 @@
-import { test } from 'qunit';
-import moduleForAcceptance from '../../tests/helpers/module-for-acceptance';
+import { module, test } from 'qunit';
+import { setupApplicationTest } from 'ember-qunit';
+import { visit } from '@ember/test-helpers';
 
-moduleForAcceptance('Acceptance | index');
+module('Acceptance | index', function(hooks) {
+  setupApplicationTest(hooks);
 
-test('has intercom script attached to body', function(assert) {
-  visit('/');
+  test('has intercom script attached to body', async function(assert) {
+    await visit('/');
 
-  andThen(function() {
-    assert.ok($('#intercom-frame'), 'intercom script in body');
+    assert.ok(document.querySelector('#ember-intercom-api'), 'intercom script in body');
   });
 });

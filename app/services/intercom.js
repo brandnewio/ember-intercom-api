@@ -1,7 +1,7 @@
-import Ember from 'ember';
+import Service from '@ember/service';
+import { computed } from '@ember/object';
+import { isPresent } from '@ember/utils';
 import config from '../config/environment';
-
-const { Service, computed, isPresent } = Ember;
 
 export default Service.extend({
   boot(params = {}) {
