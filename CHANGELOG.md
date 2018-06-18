@@ -1,5 +1,9 @@
 # ember-intercom-api CHANGELOG
 
+## 0.3.2 (pre-release)
+
+- remove `bower.json` file
+
 ## 0.3.1 (June 15, 2018)
 
 - new api method exposed: `getVisitorId`
