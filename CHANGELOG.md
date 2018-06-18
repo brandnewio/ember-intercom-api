@@ -1,6 +1,6 @@
 # ember-intercom-api CHANGELOG
 
-## 0.3.2 (pre-release)
+## 0.3.2 (June 18, 2018)
 
 - remove `bower.json` file
 
